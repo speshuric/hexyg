@@ -1,0 +1,216 @@
+# Rust
+/target/
+**/*.rs.bk
+*.pdb
+# Cargo.lock should be committed for applications (CLI tools)
+# Uncomment the line below only if this is a library crate:
+# Cargo.lock
+
+# Node.js / TypeScript
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+.npm
+.eslintcache
+*.tsbuildinfo
+dist/
+build/
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+*.egg-info/
+.eggs/
+
+# Java / Kotlin / Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+out/
+*.class
+*.jar
+*.war
+*.ear
+*.iml
+.idea/
+*.iws
+*.ipr
+
+# C# / .NET
+bin/
+obj/
+*.user
+*.suo
+*.cache
+*.dll
+*.exe
+*.pdb
+*.cache
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Go
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+go.work
+vendor/
+
+# C/C++
+*.o
+*.a
+*.so
+*.dylib
+*.dll
+*.exe
+*.out
+*.obj
+*.pdb
+*.ilk
+*.exp
+*.lib
+*.dSYM/
+cmake-build-*/
+build/
+.vs/
+
+# Swift
+.build/
+*.xcodeproj
+*.xcworkspace
+*.swiftpm
+.swiftpm/
+Package.resolved
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+*.moved-aside
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# ANTLR / Generated parsers
+*.interp
+*.tokens
+**/generated/
+**/gen/
+*.g4.bak
+
+# IDE / Editors
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.swp
+*.swo
+*~
+.idea/
+*.sublime-project
+*.sublime-workspace
+.project
+.classpath
+.settings/
+*.code-workspace
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# CI / CD
+.github/workflows/*.log
+.circleci/
+.travis.yml
+.gitlab-ci.yml
+*.log
+
+# Test artifacts
+test-results/
+coverage/
+*.coverage
+*.cover
+.hypothesis/
+.pytest_cache/
+junit.xml
+test-output/
+
+# Documentation builds
+docs/_build/
+docs/.doctrees/
+site/
+_site/
+.jekyll-cache/
+.jekyll-metadata
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+.cache/
+tmp/
+temp/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+*.env
+
+# Binary test files (keep source hex files, ignore generated binaries)
+tests/corpus/**/*.bin
+!tests/corpus/**/*.hex
+
+# Build outputs
+*.wasm
+*.wasm.map
+*.wasm.gz
+
+# Package manager locks (keep only for libraries, not for applications)
+# Uncomment if this is a library:
+# Cargo.lock
+
+# Local configuration
+config.local.*
+*.local.json
+*.local.toml
