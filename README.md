@@ -102,7 +102,7 @@ See [Basic Idea](specs/00.02_basic_idea.md) for detailed grammar specification.
 
 ## Contributing
 
-Contributions are welcome! Please refer to the project specifications in the `/specs` directory for implementation guidelines.
+Contributions are welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines. Please refer to the project specifications in the `/specs` directory for implementation details.
 
 ## License
 
