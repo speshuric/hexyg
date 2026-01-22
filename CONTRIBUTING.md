@@ -1,4 +1,4 @@
-# Contributing to Hexator
+# Contributing to Hexyg
 
 ## Workflow
 

@@ -1,4 +1,4 @@
-# Hexator Grammar Specification
+# Hexyg Grammar Specification
 
 ## Informal Grammar Example
 

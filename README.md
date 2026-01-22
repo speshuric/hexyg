@@ -1,20 +1,20 @@
-# Hexator
+# Hexyg
 
 [Русский](README.ru.md) | English
 
-**Hexator** is a bidirectional converter and editor for hexadecimal (hex) text representations of binary data. It provides a powerful CLI tool, LSP server, and editor plugins for working with hex-encoded binary files in a human-readable, version-control-friendly format.
+**Hexyg** is a bidirectional converter and editor for hexadecimal (hex) text representations of binary data. It provides a powerful CLI tool, LSP server, and editor plugins for working with hex-encoded binary files in a human-readable, version-control-friendly format.
 
 ## Overview
 
-Hexator allows you to:
+Hexyg allows you to:
 - Convert binary files to structured hex text with formatting, comments, and metadata
 - Convert hex text back to binary files with validation
 - Edit hex files in your favorite editor with syntax highlighting and LSP support
 - Store binary data in git repositories as text files, enabling diff analysis in pull requests
 
-### Why Hexator?
+### Why Hexyg?
 
-Traditional binary files are opaque in version control systems. Hexator solves this by:
+Traditional binary files are opaque in version control systems. Hexyg solves this by:
 - Converting binaries to readable hex text that can be versioned and diffed
 - Supporting comments and structured annotations for better documentation
 - Providing editor integration for comfortable editing
@@ -47,22 +47,22 @@ This project is currently in active development. The core functionality is being
 
 ```bash
 # Convert binary file to hex text
-hexator --bin-to-hex --input input.binary --output text.hex
+hexyg --bin-to-hex --input input.binary --output text.hex
 
 # Convert hex text to binary file
-hexator --hex-to-bin --input text.hex --output output.binary
+hexyg --hex-to-bin --input text.hex --output output.binary
 
 # Use with pipes
-echo "GOOGLE" | hexator --bin-to-hex
+echo "GOOGLE" | hexyg --bin-to-hex
 # Output: 474F4F474C45
 
-echo "474F4F474C45" | hexator --hex-to-bin
+echo "474F4F474C45" | hexyg --hex-to-bin
 # Output: GOOGLE
 ```
 
 ## Hex File Format
 
-Hexator uses a structured text format for representing binary data:
+Hexyg uses a structured text format for representing binary data:
 
 ```hex
 #option endian=LITTLE_ENDIAN

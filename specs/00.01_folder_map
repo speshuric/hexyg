@@ -1,4 +1,4 @@
-hexator/
+hexyg/
 ├── .github/                 # CI/CD Workflows
 ├── .vscode/                 # Настройки для VS Code / Cursor
 ├── .zed/                    # Настройки для Zed
@@ -6,20 +6,20 @@ hexator/
 ├── bin/                     # Скрипты (генерация тестов, запуск сборки)
 │
 ├── crates/                  # RUST (Workspace) — Основная разработка здесь
-│   ├── hexator-core/        # Библиотека ядра (Parser, DOM, Logic)
-│   ├── hexator-cli/         # Утилита командной строки
-│   └── hexator-lsp/         # LSP сервер
+│   ├── hexyg-core/        # Библиотека ядра (Parser, DOM, Logic)
+│   ├── hexyg-cli/         # Утилита командной строки
+│   └── hexyg-lsp/         # LSP сервер
 │
 ├── packages/                # TYPESCRIPT / WEB
-│   ├── hexator-core-ts/     # Порт ядра на TS
-│   └── hexator-vscode/      # Расширение для VS Code
+│   ├── hexyg-core-ts/     # Порт ядра на TS
+│   └── hexyg-vscode/      # Расширение для VS Code
 │
 ├── platforms/               # JVM / OTHER
-│   ├── hexator-core-kt/     # Порт ядра на Kotlin
-│   └── hexator-intellij/    # Плагин для IDEA
+│   ├── hexyg-core-kt/     # Порт ядра на Kotlin
+│   └── hexyg-intellij/    # Плагин для IDEA
 │
 ├── grammar/                 # ИСТОЧНИК ПРАВДЫ: Грамматика
-│   ├── Hexator.g4           # ANTLR файл (как спецификация)
+│   ├── hexyg.g4           # ANTLR файл (как спецификация)
 │   └── syntax_examples.md   # Примеры для обучения LLM
 │
 ├── tests/                   # ИСТОЧНИК ПРАВДЫ: Тестовый корпус
