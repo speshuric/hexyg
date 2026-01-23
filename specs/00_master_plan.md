@@ -137,6 +137,12 @@
     - [ ] Определить `FileType` (.hex).
     - [ ] Подключить Kotlin-порт ядра для построения PSI (Program Structure Interface).
     - [ ] Реализовать Annotator (подсветка ошибок).
+- [ ] **6.3. Другие (список чтобы не забыть)**
+    - [ ] Zed
+    - [ ] Kate/Kwrite
+    - [ ] Vim/neovim
+    - [ ] VS
+    - [ ] QT Creator
 
 ## 7. Инфраструктура и Релиз
 
