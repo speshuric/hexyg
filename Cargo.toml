@@ -1,0 +1,7 @@
+[workspace]
+members = [
+    "crates/hexyg-core",
+    "crates/hexyg-cli",
+    "crates/hexyg-lsp",
+]
+resolver = "2"
