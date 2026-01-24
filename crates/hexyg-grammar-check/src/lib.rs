@@ -147,7 +147,7 @@ mod tests {
                     failed = true;
                 } else {
                     // Check for parse errors in output
-                    let stdout = String::from_utf8_lossy(&output.stdout);
+                    //let stdout = String::from_utf8_lossy(&output.stdout);
                     let stderr = String::from_utf8_lossy(&output.stderr);
 
                     // Check for actual parse errors (not just ambiguity warnings)
