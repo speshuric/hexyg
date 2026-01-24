@@ -3,5 +3,6 @@ members = [
     "crates/hexyg-core",
     "crates/hexyg-cli",
     "crates/hexyg-lsp",
+    "crates/hexyg-grammar-check",
 ]
 resolver = "2"

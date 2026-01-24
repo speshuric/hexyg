@@ -100,6 +100,29 @@ See [Basic Idea](specs/00.02_basic_idea.md) for detailed grammar specification.
 - [Grammar Specification](specs/01_grammar_spec.md) - Detailed grammar rules
 - [Options](specs/02_options.md) - Configuration options
 
+## Development
+
+### Building
+
+```bash
+# Build the project
+cargo build
+
+# Run all tests
+cargo test
+```
+
+### Grammar Validation
+
+The ANTLR grammar can be validated automatically:
+
+```bash
+# Validate grammar and test corpus files
+cargo test -p hexyg-grammar-check
+```
+
+**Requirements**: Java (JRE) must be installed for grammar validation. ANTLR jar will be downloaded automatically on first run.
+
 ## Contributing
 
 Contributions are welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines. Please refer to the project specifications in the `/specs` directory for implementation details.

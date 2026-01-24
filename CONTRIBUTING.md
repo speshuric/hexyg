@@ -46,6 +46,16 @@ Poorly formatted issues will be closed without discussion.
 - Use shared test corpus from `/tests/corpus` for cross-language validation.
 - Tests must be deterministic and isolated.
 
+## Grammar Development
+
+The reference grammar is located in `grammar/hexyg.g4`. To verify grammar correctness:
+
+1. You must have **Java (JRE)** installed and available in your `PATH`.
+2. Run `cargo test -p hexyg-grammar-check`.
+3. This will automatically download ANTLR, generate the parser, and validate corpus files.
+
+The grammar file is used as documentation for LLM-assisted development and for validation, but **not** for generating the production Rust parser (which may use pest or a hand-written parser for better performance).
+
 ## Documentation
 
 - Code is written in English, comments too.
