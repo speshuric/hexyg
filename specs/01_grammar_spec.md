@@ -31,7 +31,7 @@
 // default start address is 0
 // if padding is allowed, address gaps are permitted
 
-00000100: 00 01 02 03 // this representation is also possible
+00000100: 00 01 02 03 // this format is also valid
           04 05 06 07
 
 00000108: 
@@ -39,7 +39,7 @@
 0C0D0E0F 
 // same as "00000108: 08090A0B0C0D0E0F"
 
-// values can appear after "|"
+// values can be defined after "|"
 00000200: FF 00 00 00 EE EE 00 00 | +0:u32=255 +03:u32=61166 // by addresses
 00000208: 01 00 00 00 02 00 03 00 | u32=1 u16=2 u16=3 // sequentially without addresses
 00000210: 01 00 00 00 02 00 03 00 | +00(name_x):u32=1 +03(name_y):u16=2 +03(name_z):u16=3 // with names
@@ -54,7 +54,7 @@
           73 75 6D 20 64 6F 6C 6F 
 // Structures are simple, no recursion, of course. But nesting is possible.
 
-// representations and values can be combined
+// text representations and values can be combined
 00000300: 4C 6F 72 65 6D 20 69 70 73 75 6D 20 64 6F 6C 6F [Lorem ipsum dolo] | +00:utf8="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 00000310: 72 20 73 69 74 20 61 6D 65 74 2C 20 63 6F 6E 73 [r sit amet, cons]
 00000320: 65 63 74 65 74 75 72 20 61 64 69 70 69 73 63 69 [ectetur adipisci]
