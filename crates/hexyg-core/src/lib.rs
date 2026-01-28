@@ -1,14 +1,10 @@
-pub fn add(left: usize, right: usize) -> usize {
-    left + right
-}
+//! Hexyg Core Library
+//!
+//! Core functionality for bidirectional conversion between binary data and hex text format.
 
-#[cfg(test)]
-mod tests {
-    use super::*;
+pub mod config;
+pub mod convert;
+pub mod error;
 
-    #[test]
-    fn it_works() {
-        let result = add(2, 2);
-        assert_eq!(result, 4);
-    }
-}
+pub use config::Config;
+pub use error::{Error, Result};
