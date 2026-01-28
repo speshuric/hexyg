@@ -144,7 +144,7 @@ limitations under the License.
 ## Roadmap
 
 - [x] Project initialization and structure
-- [ ] Grammar specification and reference implementation
+- [x] Grammar specification and reference implementation
 - [ ] Rust core (CLI, parser, converter)
 - [ ] LSP server implementation
 - [ ] VS Code extension
