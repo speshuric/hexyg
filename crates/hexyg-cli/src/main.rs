@@ -77,6 +77,10 @@ struct Cli {
     #[arg(long = "repeat-address", default_value = "every_line")]
     repeat_address: String,
 
+    /// Show ASCII preview: true or false (default: true)
+    #[arg(long = "preview", default_value = "true")]
+    preview: String,
+
     // --hex-to-bin options
     /// Check consistency: none, text, values, all, text,values
     #[arg(long = "check", default_value = "none")]
@@ -127,6 +131,16 @@ fn main() -> Result<()> {
         "never" | "once" => false,
         _ => {
             eprintln!("Invalid repeat-address: {}. Use never, once, or every_line", cli.repeat_address);
+            std::process::exit(1);
+        }
+    };
+
+    // Parse preview
+    config.show_preview = match cli.preview.to_lowercase().as_str() {
+        "true" | "yes" | "1" => true,
+        "false" | "no" | "0" => false,
+        _ => {
+            eprintln!("Invalid preview value: {}. Use true or false", cli.preview);
             std::process::exit(1);
         }
     };

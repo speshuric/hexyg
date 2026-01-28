@@ -35,6 +35,7 @@ hexyg [COMMAND] [OPTIONS]
 - `--byte-separator=""` – empty or whitespace string to separate bytes
 - `--block-separator=" "` – empty or whitespace string to separate blocks of bytes in one line
 - `--repeat-address={never|once|every_line}` – print address on every line or only on discontinuity. Default is `every_line`. Set `repeat_address` option in file.
+- `--preview={true|false}` – show ASCII preview in square brackets. Default is `true`. Set `preview` option in file.
 
 #### Future options (not implemented)
 
@@ -72,8 +73,8 @@ hexyg --bin-to-hex --input data.bin --repeat-address never
 
 ### Fully Implemented
 - Commands: `--bin-to-hex`, `--hex-to-bin`
-- Common: `--input`, `--output`
-- bin-to-hex: `--address-size`, `--line-length`, `--block-length`, `--repeat-address`
+- Common: `--input` (`-i`), `--output` (`-o`)
+- bin-to-hex: `--address-size`, `--line-length`, `--block-length`, `--repeat-address`, `--preview`
 
 ### Parsed but Not Yet Used
 - Common: `--from`, `--to`
